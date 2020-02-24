@@ -14,6 +14,7 @@ The `now dev` command allows you to test the ZEIT Now app locally.
 ## api
 
 - [/api/cars][api-cars]
+- [/api/colors][api-colors]
 - [/api/exotics][api-exotics]
 - [/api/groups][api-groups]
 - [/api/makes][api-makes]
@@ -26,6 +27,7 @@ The `now dev` command allows you to test the ZEIT Now app locally.
 
 
 [api-cars]: https://mock-gts.eswat2.now.sh/api/cars
+[api-colors]: https://mock-gts.eswat2.now.sh/api/colors
 [api-exotics]: https://mock-gts.eswat2.now.sh/api/exotics
 [api-groups]: https://mock-gts.eswat2.now.sh/api/groups
 [api-makes]: https://mock-gts.eswat2.now.sh/api/makes

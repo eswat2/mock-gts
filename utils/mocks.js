@@ -163,6 +163,7 @@ const delay = () => {
 
 module.exports = {
   chance,
+  colors,
   dataSet,
   compare,
   delay,
