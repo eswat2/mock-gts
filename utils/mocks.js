@@ -161,6 +161,11 @@ const delay = () => {
   return chance.integer({ min: 500, max: 3500 })
 }
 
+const randomArray = (length, max) =>
+  Array(length)
+    .fill()
+    .map(() => Math.round(Math.random() * max))
+
 module.exports = {
   chance,
   colors,
@@ -169,4 +174,5 @@ module.exports = {
   delay,
   gtCars,
   gtExotics,
+  randomArray,
 }

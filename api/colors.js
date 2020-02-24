@@ -1,11 +1,10 @@
-const { chance, colors } = require('../utils/mocks')
+const { colors, randomArray } = require('../utils/mocks')
 
 module.exports = (req, res) => {
   const { count } = req.query
   const num = count ? parseInt(count) : 1
-  const pick = num > colors.length ? colors.length : num
+  const max = colors.length - 1
+  const indx = randomArray(num, max)
 
-  res.setHeader('x-count', num)
-  res.setHeader('x-pick', pick)
-  res.json(chance.pickset(colors, pick))
+  res.json(indx.map(i => colors[i]))
 }
