@@ -1,5 +1,6 @@
 const Chance = require('chance')
 const vinGenerator = require('vin-generator')
+const shortid = require('shortid')
 const { filters, gts } = require('./gt-sports')
 
 const chance = new Chance()
@@ -92,6 +93,7 @@ const generateDealers = () => {
       const color = chance.pickone(colors)
       const { group, make, model, year } = gtCars.cars[indx]
       const obj = {
+        id: shortid.generate(),
         vin,
         make,
         model,
@@ -103,6 +105,7 @@ const generateDealers = () => {
     })
 
     const dealer = {
+      id: shortid.generate(),
       dealerId: id,
       name: `${chance.name()} ${chance.pickone(dealerSuffix)}`,
       vehicles: cars,
