@@ -200,6 +200,12 @@ const data = [
   {
     make: 'BMW',
     model: 'M3 Coupé',
+    group: 'N 300',
+    year: 2003,
+  },
+  {
+    make: 'BMW',
+    model: 'M3 Coupé',
     group: 'N 400',
     year: 2007,
   },
@@ -307,6 +313,12 @@ const data = [
   },
   {
     make: 'Chevrolet',
+    model: 'Camaro ZL1 1LE',
+    group: 'N 700',
+    year: 2018,
+  },
+  {
+    make: 'Chevrolet',
     model: 'Corvette C7 Gr.3',
     group: 'Gr.3',
     year: 2014,
@@ -340,6 +352,12 @@ const data = [
     model: 'Corvette Sting Ray Sport Coupe (C2)',
     group: 'N 200',
     year: 1963,
+  },
+  {
+    make: 'Chevrolet',
+    model: 'Corvette Stingray Racer Concept',
+    group: 'Gr.X',
+    year: 1959,
   },
   {
     make: 'Citroën',
@@ -462,6 +480,12 @@ const data = [
     year: 2014,
   },
   {
+    make: 'Dodge',
+    model: 'Super Bee',
+    group: 'N 300',
+    year: 1970,
+  },
+  {
     make: 'Ferrari',
     model: '250 GT Berlinetta passo corto CN.2521',
     group: 'N 300',
@@ -478,6 +502,12 @@ const data = [
     model: '330 P4',
     group: 'Gr.X',
     year: 1967,
+  },
+  {
+    make: 'Ferrari',
+    model: '365 GTB4',
+    group: 'N 400',
+    year: 1971,
   },
   {
     make: 'Ferrari',
@@ -829,6 +859,12 @@ const data = [
   },
   {
     make: 'Jaguar',
+    model: 'Vision Gran Turismo Coupe',
+    group: 'Gr.X',
+    year: 2020,
+  },
+  {
+    make: 'Jaguar',
     model: 'XJ13',
     group: 'Gr.X',
     year: 1966,
@@ -856,6 +892,12 @@ const data = [
     model: 'Aventador LP 700-4',
     group: 'N 700',
     year: 2011,
+  },
+  {
+    make: 'Lamborghini',
+    model: 'Aventador LP 750-4 Superveloce',
+    group: 'N 800',
+    year: 2015,
   },
   {
     make: 'Lamborghini',
@@ -979,6 +1021,12 @@ const data = [
   },
   {
     make: 'Mazda',
+    model: 'Demio XD Touring',
+    group: 'N 100',
+    year: 2015,
+  },
+  {
+    make: 'Mazda',
     model: 'Eunos Roadster (NA Special Package)',
     group: 'N 200',
     year: 1989,
@@ -1090,6 +1138,12 @@ const data = [
     model: 'P1 GTR',
     group: 'Gr.X',
     year: 2016,
+  },
+  {
+    make: 'Mercedes-Benz',
+    model: '300 SEL 6.8 AMG',
+    group: 'Gr.X',
+    year: 1971,
   },
   {
     make: 'Mercedes-Benz',
@@ -1453,9 +1507,21 @@ const data = [
   },
   {
     make: 'Porsche',
+    model: 'Taycan Turbo S',
+    group: 'Gr.X',
+    year: 2019,
+  },
+  {
+    make: 'Porsche',
     model: '919 Hybrid (Porsche Team)',
     group: 'Gr.1',
     year: 2017,
+  },
+  {
+    make: 'RE Amemiya',
+    model: 'FD3S RX-7',
+    group: 'N 400',
+    year: 2007,
   },
   {
     make: 'Renault',
@@ -1510,6 +1576,12 @@ const data = [
     model: 'R.S.01 GT3',
     group: 'Gr.3',
     year: 2016,
+  },
+  {
+    make: 'Ruf',
+    model: 'CTR3',
+    group: 'N 700',
+    year: 2007,
   },
   {
     make: 'Shelby',
@@ -1666,6 +1738,12 @@ const data = [
     model: '86 GT',
     group: 'N 200',
     year: 2015,
+  },
+  {
+    make: 'Toyota',
+    model: '86 GT Limited',
+    group: 'N 200',
+    year: 2016,
   },
   {
     make: 'Toyota',
