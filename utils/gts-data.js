@@ -351,16 +351,9 @@ const list = [
   ['Zagato', 'IsoRivolta Vision Gran Turismo', 'Gr.X', 2017],
 ]
 
-const MAKE = list => list[0]
-const MODEL = list => list[1]
-const GROUP = list => list[2]
-const YEAR = list => list[3]
-
+// NOTE:  Array destructuring...
 const data = list.map(car => {
-  const make = MAKE(car)
-  const model = MODEL(car)
-  const group = GROUP(car)
-  const year = YEAR(car)
+  const [make, model, group, year] = car
 
   return { make, model, group, year }
 })
