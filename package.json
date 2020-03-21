@@ -24,5 +24,8 @@
     "test": "echo skipping...",
     "deploy": "now --prod",
     "open": "open https://mock-gts.eswat2.now.sh"
+  },
+  "devDependencies": {
+    "prettier": "2.0.0"
   }
 }

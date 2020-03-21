@@ -6,5 +6,5 @@ module.exports = (req, res) => {
   const max = colors.length - 1
   const indx = randomArray(num, max)
 
-  res.json(indx.map(i => colors[i]))
+  res.json(indx.map((i) => colors[i]))
 }

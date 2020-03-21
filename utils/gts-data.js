@@ -332,7 +332,7 @@ const list = [
 ]
 
 // NOTE:  Array destructuring...
-const data = list.map(car => {
+const data = list.map((car) => {
   const [make, model, group, year] = car
 
   return { make, model, group, year }

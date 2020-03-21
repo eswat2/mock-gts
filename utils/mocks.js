@@ -63,8 +63,8 @@ const gtExotics = {
   count: exotics.length,
   makes: filters.makes(exotics).sort(),
   groups: filters.groups(exotics).sort(),
-  exotics: group => {
-    return group ? exotics.filter(car => car.group.includes(group)) : exotics
+  exotics: (group) => {
+    return group ? exotics.filter((car) => car.group.includes(group)) : exotics
   },
 }
 
@@ -74,8 +74,8 @@ const gtCars = {
   count: nClass.length,
   makes: filters.makes(nClass).sort(),
   groups: filters.groups(nClass).sort(),
-  nClass: group => {
-    return group ? nClass.filter(car => car.group.includes(group)) : nClass
+  nClass: (group) => {
+    return group ? nClass.filter((car) => car.group.includes(group)) : nClass
   },
 }
 
@@ -88,7 +88,7 @@ const generateDealers = () => {
   const dealers = dealerIds.reduce((bucket, id) => {
     const numVins = chance.integer({ min: 3, max: 14 })
     const ids = chance.unique(vinGenerator.generateVin, numVins)
-    const cars = ids.map(vin => {
+    const cars = ids.map((vin) => {
       const indx = chance.integer({ min: 0, max: gtCars.count - 1 })
       const color = chance.pickone(colors)
       const { group, make, model, year } = gtCars.cars[indx]
@@ -116,9 +116,9 @@ const generateDealers = () => {
   return dealers
 }
 
-const generateSummaryFor = dealers => {
+const generateSummaryFor = (dealers) => {
   const cars = dealers.reduce((bucket, dealer) => {
-    dealer.vehicles.forEach(car => {
+    dealer.vehicles.forEach((car) => {
       bucket.push(car)
     })
     return bucket
@@ -126,7 +126,7 @@ const generateSummaryFor = dealers => {
 
   const groups = filters.groups(cars).sort()
   const makes = filters.makes(cars).sort()
-  const vins = cars.map(car => car.vin)
+  const vins = cars.map((car) => car.vin)
 
   const summary = {
     groups,
