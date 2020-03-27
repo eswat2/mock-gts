@@ -38,8 +38,23 @@ const allMakes = () => {
   return makes(data).sort()
 }
 
+const stats = () => {
+  const nCars = nonExotics(data).length
+  const nExotics = exotics(data).length
+  const nGroups = allGroups().length
+  const nMakes = allMakes().length
+
+  return {
+    exotics: nExotics,
+    groups: nGroups,
+    makes: nMakes,
+    normal: nCars,
+    total,
+  }
+}
+
 const filters = { nonExotics, exotics, makes, groups, ids }
-const gts = { data, total, allGroups, allMakes }
+const gts = { data, total, allGroups, allMakes, stats }
 
 module.exports = {
   filters,
