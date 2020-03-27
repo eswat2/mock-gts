@@ -189,6 +189,7 @@ const list = [
   ['Mazda', 'RX-7 Spirit R Type A (FD)', 'N 300', 2002],
   ['Mazda', 'Atenza Gr.4', 'Gr.4', 2016],
   ['Mazda', 'Atenza Gr.3 Road Car', 'N 500', 2016],
+  ['Mazda', 'RX-Vision GT3 Concept', 'Gr.3', 2020],
   ['McLaren', '650S Coupe', 'N 700', 2014],
   ['McLaren', '650S Gr.4', 'Gr.4', 2015],
   ['McLaren', '650S GT3', 'Gr.3', 2015],
