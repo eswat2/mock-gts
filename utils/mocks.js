@@ -57,6 +57,13 @@ const createId = () => {
   return Date.now()
 }
 
+const gtSports = {
+  cars: gts.data,
+  count: gts.total,
+  makes: gts.allMakes(),
+  groups: gts.allGroups(),
+}
+
 const exotics = filters.exotics(gts.data)
 const gtExotics = {
   cars: exotics,
@@ -79,7 +86,7 @@ const gtCars = {
   },
 }
 
-const generateDealers = () => {
+const generateDealers = (data) => {
   const numDealers = chance.integer({ min: 3, max: 7 })
   const dealerIds = chance.unique(chance.ssn, numDealers, {
     dashes: false,
@@ -89,9 +96,9 @@ const generateDealers = () => {
     const numVins = chance.integer({ min: 3, max: 14 })
     const ids = chance.unique(vinGenerator.generateVin, numVins)
     const cars = ids.map((vin) => {
-      const indx = chance.integer({ min: 0, max: gtCars.count - 1 })
+      const indx = chance.integer({ min: 0, max: data.count - 1 })
       const color = chance.pickone(colors)
-      const { group, make, model, year } = gtCars.cars[indx]
+      const { group, make, model, year } = data.cars[indx]
       const obj = {
         id: shortid.generate(),
         vin,
@@ -143,9 +150,9 @@ const generateSummaryFor = (dealers) => {
   return summary
 }
 
-const dataSet = () => {
+const dataSet = (data) => {
   const id = createId()
-  const dealers = generateDealers()
+  const dealers = generateDealers(data)
   const summary = generateSummaryFor(dealers)
 
   return {
@@ -177,5 +184,6 @@ module.exports = {
   delay,
   gtCars,
   gtExotics,
+  gtSports,
   randomArray,
 }
