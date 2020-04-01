@@ -100,6 +100,8 @@ const generateDealers = (data) => {
       const color = chance.pickone(colors)
       const { group, make, model, year } = data.cars[indx]
       const exotic = gtExotics.groups.includes(group)
+      const racing = exotic && group !== 'Gr.X'
+      const number = racing ? chance.integer({ min: 3, max: 99 }) : undefined
       const obj = {
         id: shortid.generate(),
         vin,
@@ -109,6 +111,8 @@ const generateDealers = (data) => {
         group,
         color,
         exotic,
+        racing,
+        number,
       }
       return obj
     })
