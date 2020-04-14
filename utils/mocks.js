@@ -152,8 +152,8 @@ const generateSummaryFor = (dealers) => {
   return summary
 }
 
-const dataSet = (data, stamp) => {
-  const id = stamp
+const dataSet = (data, id) => {
+  const id = id
   const dealers = generateDealers(data)
   const summary = generateSummaryFor(dealers)
 
