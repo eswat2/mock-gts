@@ -153,7 +153,6 @@ const generateSummaryFor = (dealers) => {
 }
 
 const dataSet = (data, id) => {
-  const id = id
   const dealers = generateDealers(data)
   const summary = generateSummaryFor(dealers)
 
