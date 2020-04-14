@@ -53,10 +53,6 @@ const dealerSuffix = [
   'Venture',
 ]
 
-const createId = () => {
-  return Date.now()
-}
-
 const gtSports = {
   cars: gts.data,
   count: gts.total,
@@ -156,8 +152,8 @@ const generateSummaryFor = (dealers) => {
   return summary
 }
 
-const dataSet = (data) => {
-  const id = createId()
+const dataSet = (data, stamp) => {
+  const id = stamp
   const dealers = generateDealers(data)
   const summary = generateSummaryFor(dealers)
 
