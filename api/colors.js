@@ -6,5 +6,6 @@ module.exports = (req, res) => {
   const max = colors.length - 1
   const indx = randomArray(num, max)
 
+  res.setHeader('Access-Control-Allow-Origin', '*')
   res.json(indx.map((i) => colors[i]))
 }
