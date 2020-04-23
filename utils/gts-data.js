@@ -301,6 +301,7 @@ const list = [
   ['Toyota', 'Crown Athlete G Safety Car', 'Gr.X', 2013],
   ['Toyota', 'GR Supra Racing Concept', 'Gr.3', 2018],
   ['Toyota', 'GR Supra RZ', 'N 300', 2019],
+  ['Toyota', 'GR Supra RZ', 'N 400', 2020],
   ['Toyota', 'MR2 GT-S', 'N 200', 1987],
   ['Toyota', 'Sports 800', 'N 100', 1965],
   ['Toyota', 'Sprinter Trueno 3door 1600GT APEX (AE86)', 'N 100', 1983],
