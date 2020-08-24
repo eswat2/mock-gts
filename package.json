@@ -26,6 +26,6 @@
     "open": "open https://mock-gts.eswat2.now.sh"
   },
   "devDependencies": {
-    "prettier": "2.0.5"
+    "prettier": "2.1.0"
   }
 }
