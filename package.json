@@ -23,9 +23,9 @@
     "spell": "cspell './**/*.js'",
     "test": "echo skipping...",
     "deploy": "now --prod",
-    "open": "open https://mock-gts.eswat2.now.sh"
+    "open": "open https://mock-gts.vercel.app"
   },
   "devDependencies": {
-    "prettier": "2.3.0"
+    "prettier": "2.3.1"
   }
 }
