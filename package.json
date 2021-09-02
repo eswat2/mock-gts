@@ -6,7 +6,7 @@
   "repository": "eswat2/mock-gts",
   "license": "MIT",
   "dependencies": {
-    "chance": "1.1.7",
+    "chance": "1.1.8",
     "shortid": "2.2.16",
     "vin-generator": "1.0.1"
   },
