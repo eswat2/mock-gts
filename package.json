@@ -18,11 +18,11 @@
     "printWidth": 100
   },
   "scripts": {
-    "dev": "now dev",
+    "dev": "vc dev",
     "cc": "prettier --check './**/*.js'",
     "spell": "cspell './**/*.js'",
     "test": "echo skipping...",
-    "deploy": "now --prod",
+    "deploy": "vc --prod",
     "open": "open https://mock-gts.vercel.app"
   },
   "devDependencies": {
