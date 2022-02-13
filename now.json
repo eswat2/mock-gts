@@ -36,6 +36,10 @@
       "dest": "/api/stats.js"
     },
     {
+      "src": "/api/vins",
+      "dest": "/api/vins.js"
+    },
+    {
       "src": "/api",
       "dest": "/api/greetings.js"
     },
