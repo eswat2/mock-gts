@@ -22,6 +22,7 @@
     "cc": "prettier --check './**/*.js'",
     "spell": "cspell './**/*.js'",
     "test": "echo skipping...",
+    "predeploy": "yarn version --patch",
     "deploy": "vc --prod",
     "open": "open https://mock-gts.vercel.app"
   },
