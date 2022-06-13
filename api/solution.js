@@ -1,6 +1,6 @@
-const { dataSet, gtSports } = require('../utils/mocks')
+import { dataSet, gtSports } from '../utils/mocks.js'
 
-module.exports = (req, res) => {
+export default (req, res) => {
   const { id } = req.query
   const data = dataSet(gtSports, id)
   // NOTE:  we are returning the id & solution in the response...

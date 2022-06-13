@@ -1,6 +1,6 @@
-const { gts } = require('../utils/gt-sports')
+import { gts } from '../utils/gt-sports.js'
 
-module.exports = (req, res) => {
+export default (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*')
   res.json(gts.stats())
 }

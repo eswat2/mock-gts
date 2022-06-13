@@ -7,11 +7,12 @@ A prototype REST server which uses the cars from GT Sports (video game).  A tech
 To try this locally, run the following:
 
 1. `yarn`
-2. `now dev`
+2. `yarn dev`
 
-The `now dev` command allows you to test the ZEIT Now app locally.
+The `yarn dev` command allows you to test the ZEIT Now app locally.
 
 ## api
+> localhost:3000 ...
 
 - [/api/cars][api-cars]
 - [/api/colors][api-colors]
@@ -19,6 +20,8 @@ The `now dev` command allows you to test the ZEIT Now app locally.
 - [/api/groups][api-groups]
 - [/api/makes][api-makes]
 - [/api/solution][api-solution]
+- [/api/stats][api-stats]
+- [/api/vins][api-vins]
 
 ## who
 
@@ -26,11 +29,13 @@ The `now dev` command allows you to test the ZEIT Now app locally.
 - [eswat2.github.io][eswat2-io]
 
 
-[api-cars]: https://mock-gts.vercel.app/api/cars
-[api-colors]: https://mock-gts.vercel.app/api/colors
-[api-exotics]: https://mock-gts.vercel.app/api/exotics
-[api-groups]: https://mock-gts.vercel.app/api/groups
-[api-makes]: https://mock-gts.vercel.app/api/makes
-[api-solution]: https://mock-gts.vercel.app/api/solution
+[api-cars]: http://localhost:3000/api/cars
+[api-colors]: http://localhost:3000/api/colors
+[api-exotics]: http://localhost:3000/api/exotics
+[api-groups]: http://localhost:3000/api/groups
+[api-makes]: http://localhost:3000/api/makes
+[api-solution]: http://localhost:3000/api/solution
+[api-stats]: http://localhost:3000/api/stats
+[api-vins]: http://localhost:3000/api/vins
 [eswat2-io]: https://eswat2.github.io
 

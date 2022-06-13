@@ -1,7 +1,7 @@
-const Chance = require('chance')
-const vinGenerator = require('vin-generator')
-const shortid = require('shortid')
-const { filters, gts } = require('./gt-sports')
+import Chance from 'chance'
+import vinGenerator from 'vin-generator'
+import shortid from 'shortid'
+import { filters, gts } from './gt-sports.js'
 
 const chance = new Chance()
 
@@ -177,7 +177,7 @@ const randomArray = (length, max) =>
     .fill()
     .map(() => Math.round(Math.random() * max))
 
-module.exports = {
+export {
   chance,
   colors,
   dataSet,

@@ -1,6 +1,6 @@
-const { gtCars } = require('../utils/mocks')
+import { gtCars } from '../utils/mocks.js'
 
-module.exports = (req, res) => {
+export default (req, res) => {
   const { group } = req.query
 
   res.setHeader('Access-Control-Allow-Origin', '*')

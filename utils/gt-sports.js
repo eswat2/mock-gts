@@ -1,4 +1,4 @@
-const { data } = require('./gts-data')
+import { data } from './gts-data.js'
 
 const total = data.length
 
@@ -56,7 +56,7 @@ const stats = () => {
 const filters = { nonExotics, exotics, makes, groups, ids }
 const gts = { data, total, allGroups, allMakes, stats }
 
-module.exports = {
+export {
   filters,
   gts,
 }

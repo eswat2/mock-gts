@@ -340,6 +340,6 @@ const data = list.map((car) => {
   return { make, model, group, year }
 })
 
-module.exports = {
+export {
   data,
 }
