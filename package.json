@@ -1,6 +1,6 @@
 {
   "name": "mock-gts",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "prototype - simple REST api server with GTS data...",
   "author": "eswat2",
   "repository": "eswat2/mock-gts",
