@@ -31,6 +31,6 @@
     "open": "open https://mock-gts.vercel.app"
   },
   "devDependencies": {
-    "prettier": "3.5.3"
+    "prettier": "3.6.0"
   }
 }
