@@ -7,7 +7,7 @@
   "license": "MIT",
   "type": "module",
   "engines": {
-    "node": "22.x"
+    "node": ">=18"
   },
   "dependencies": {
     "chance": "1.1.13",
